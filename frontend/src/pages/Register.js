@@ -12,7 +12,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/register', formData);
+      await axios.post('https://support-ticketing-system-jet.vercel.app/api/auth/register', formData);
       alert('Registered successfully. Please log in.');
       navigate('/login');
     } catch (err) {
