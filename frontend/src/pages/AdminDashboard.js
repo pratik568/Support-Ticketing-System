@@ -24,7 +24,7 @@ const AdminDashboard = () => {
   // ✅ Update ticket status
   const updateStatus = async (id, newStatus) => {
     try {
-      await axios.patch(`http://localhost:5000/api/admin/tickets/${id}`, { status: newStatus });
+      await axios.patch(`https://support-ticketing-system-jet.vercel.app/api/admin/tickets/${id}`, { status: newStatus });
 
       // Remove from UI if closed
       if (newStatus.toLowerCase() === 'closed') {
