@@ -1,0 +1,55 @@
+/* AdminDashboard.css */
+
+.admin-dashboard {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.admin-dashboard h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.admin-dashboard button:hover {
+  background-color: #c9302c;
+}
+
+.admin-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-dashboard th,
+.admin-dashboard td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.admin-dashboard th {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.admin-dashboard select {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
