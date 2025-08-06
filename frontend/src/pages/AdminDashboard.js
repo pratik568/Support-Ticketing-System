@@ -10,7 +10,7 @@ const AdminDashboard = () => {
   // ✅ Fetch open / need-to-call tickets
   const fetchTickets = useCallback(async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/admin/tickets');
+      const res = await axios.get('https://support-ticketing-system-jet.vercel.app/api/admin/tickets');
       const openTickets = res.data.filter(ticket => {
         const status = ticket.status?.toLowerCase();
         return status === 'open' || status === 'need to call';
